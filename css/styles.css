@@ -13,6 +13,8 @@ body {
 h2 {
 	text-align: center;
 	font-size: 1.5em;
+	font-family: 'Playfair', serif;
+	margin-top: 2rem;
 }
 
 .container {
@@ -153,7 +155,11 @@ footer ul a:hover {
 	float: left;
 }
 
-.parallax-segment h2 {
+h1.parallax {
+	margin-left: -999px;
+}
+
+.parallax-segment h1, .parallax-segment h2 {
 	font-family: 'Playfair', serif;
 	margin-top: 2rem;
 }
