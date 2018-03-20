@@ -1,39 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <meta charset="utf-8">
+<!-- title -->
   <title>Kat Eastman</title>
+
+<!-- styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Raleway" rel="stylesheet">
+
+<!-- meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Personal Portfolio assignment for Ada Developers Academy https://github.com/Ada-C9/personal-portfolio-site">
 </head>
 <body>
   <div class="container">
     <header>
-      <nav>
+      <nav id="top-nav">
         <ul>
-          <li>projects</li>
-          <li>thoughts</li>
-          <li>connect</li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="portfolio.html">projects</a></li>
+          <li><a href="tech-blog.html">thoughts</a></li>
+          <li><a href="about-me.html">about me</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
-      <section>
-        <article class="">
-
+      <div class="parallax"></div>
+      <section class="three-column break">
+        <a href="tech-blog.html">
+          <article>
+          <img src="../images/1-4.jpg" alt="decorative" class="circle"/>
+          <h2>Blog</h2>
+        <p> Random, tech adjacent thoughts on things that arise in the course of becoming a full stack developer.</p>
         </article>
+      </a>
 
-      </section>
-      <section>
-        <article class="">
-
+        <a href="portfolio.html">
+        <article>
+          <img src="../images/1-15.jpg" alt="decorative" class="circle"/>
+          <h2>Projects</h2>
+          <p> Assignments completed to date in the Ada Developer's Academy curriculum.</p>
         </article>
-        <aside class="">
+      </a>
 
-        </aside>
-      </section>
+    <a href="#contact"><article>
+          <img src="../images/1-12.jpg" alt="decorative" class="circle"/>
+          <h2>Contact</h2>
+          <p> Reach out and send me an email sort of thing.</p>
+      </article>
+    </section></a>
+      <!-- <article class="profile parallax">
+        <h2>Bio</h2>
+          <img src="../images/profile.jpg" alt="picture of woman with a hat, bowtie and eyeliner mustache" class="profile-picture"/>
+          <h3> Katherine Eastman </h3>
+          <span> proto-developer, writer and illustrator </span>
+      </article> -->
   </main>
+    <div class="parallax"></div>
+  <footer>
+    <section>
+      <ul>
+        <li><a href="tech-blog.html">blog posts</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+      </ul>
+    </section>
+  </footer>
+  <section id="contact">
+    <a href="#"><section class="button"><p>&lt;&lt; CLOSE</p></section></a>
+    <form id="emailform">
+      <label for="email">Your Email</label><input type="text" id="email"/>
+      <br />
+      <br />
+      <label for="subject">Subject</label><input type="text" id="subject"/>
+      <br />
+      <br />
+      <label for="message">Message</label><textarea form="emailform" id="message"></textarea>
+      <br />
+      <input type="submit" class="button" value="SEND EMAIL"/>
+    </form>
+  </section>
 </div>
 </body>
 </html>
